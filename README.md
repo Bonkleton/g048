@@ -10,5 +10,5 @@ Features:
     - base: The number being exponentated with each swipe (default is base 2)
     - pieces: The number of pieces the game can start with (default is 2)
  
- To-Dos:
-  - Autosaving to text file in program directory
+To-Dos:
+ - Autosaving to text file in program directory
