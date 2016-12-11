@@ -72,7 +72,7 @@ func rtg(c []int, b int, gb [][]string) [][]string {
 			c[i-1] = d[1]
 			continue
 		} else {
-			gb[c[i]][c[i-1]] = strconv.Itoa(maybeDbl(b))
+			gb[c[i]][c[i-1]] = strconv.Itoa(maybeSquare(b))
 			i = i + 2
 		}
 	}
@@ -80,9 +80,9 @@ func rtg(c []int, b int, gb [][]string) [][]string {
 }
 
 // doubles its input 1/10 of the time
-func maybeDbl(x int) int {
+func maybeSquare(x int) int {
 	if rand.Intn(10) == 0 {
-		return x * 2
+		return x * x
 	} else {
 		return x
 	}

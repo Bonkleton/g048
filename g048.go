@@ -87,6 +87,9 @@ func main() {
 	} else if pieces == 0 {
 		fmt.Println("Empty starting board impossible! Defaulting to 2 pieces...")
 		pieces, _ = strconv.Atoi(a[2])
+	} else if pieces >= size*size {
+		fmt.Println("Full starting board impossible! Defaulting to 2 pieces...")
+		pieces, _ = strconv.Atoi(a[2])
 	} else {
 		pieces, _ = strconv.Atoi(a[2])
 	}
